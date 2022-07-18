@@ -1,13 +1,141 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 450px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  box-sizing: border-box;
 }
+
+/* Header... */
+  .header{
+    display: flex;
+    padding: 5px 22PX;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    margin-bottom: 10px;
+  }
+      .header img{
+        width: 50px;
+      }
+    
+      .header-title{
+        padding: 0;
+        margin: 0;
+        font-family: 'Comic Neue';
+        font-size: 25px;
+        color: white;
+      }
+
+/* Meme Form... */
+.form{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+    .form input{
+      width: 200px;
+      box-sizing: border-box;
+      padding: 5px;
+      font-size: 17px;
+      border-radius: 3px;
+      border: 2px solid black;
+    }
+
+/* Meme... */
+.meme{
+  position: relative  ;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  text-align: center;
+  padding-bottom: 0px;  
+}
+
+    .meme-img{
+      width: 100%;
+      max-height: 400px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+
+    .meme-text {
+      position: absolute;
+      width: 80%;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 15px 0;
+      padding: 0 5px;
+      font-family: impact, sans-serif;
+      font-size: 2em;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 1px;
+      text-shadow:
+          2px 2px 0 black,
+          -2px -2px 0 black,
+          2px -2px 0 black,
+          -2px 2px 0 black,
+          0 2px 0 black,
+          2px 0 0 black,
+          0 -2px 0 black,
+          -2px 0 0 black,
+          2px 2px 5px black;
+      }
+  
+      .bottom {
+          bottom: 0;
+      }
+
+      .top {
+          top: 0;
+      }
+
+/* Button container... */
+.btn-container{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+    .btn-container button{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 3px;
+      font-size: 20px;
+      border-radius: 3px;
+      border: 2px solid #672280;
+      font-family: "Comic Neue";
+    }
+
+    .image-btn{
+      background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+      color: white;
+    }
+    
+    .image-btn:hover{
+      background: #A626D3;
+    }
+
+    .download-btn{
+      background-color: white;
+      color: #672280;
+  
+    }
+
+    .download-btn:hover{
+      background-color:#f4d4ff;
+    }
